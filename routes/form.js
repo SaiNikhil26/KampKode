@@ -4,7 +4,7 @@ const admin = require('firebase-admin');
 const db = admin.firestore();
 
 router.get('/',(req,res) => {
-    res.sendFile('index.html',{root:'views'});
+    res.sendFile('index.html',{root:'public'});
 });
 
 router.post('/submit-form', async (req, res) => {
